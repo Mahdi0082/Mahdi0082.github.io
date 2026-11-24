@@ -99,7 +99,7 @@ story += bullets([
 story += section("Publications")
 story += bullets([
     "<b>FedBiC: Federated Bilevel Constrained Optimization.</b> Under review at ICLR 2027.",
-    "<b>An Interpretable Diagnosis of Retinal Diseases Using Vision Transformer and Grad-CAM.</b> IEEE ECCE 2025, second author.",
+    "<b>An Interpretable Diagnosis of Retinal Diseases Using Vision Transformer and Grad-CAM.</b> IEEE ECCE 2025.",
 ])
 
 story += section("Projects")
