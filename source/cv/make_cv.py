@@ -61,7 +61,7 @@ def bullets(items):
 
 story = []
 story += [Paragraph("Mahdi Hasan Bhuiyan", name_s),
-          Paragraph("PhD Student in Computer Science, Washington State University", role_s),
+          Paragraph('PhD Student in Computer Science, Washington State University &nbsp;·&nbsp; <link href="https://mahdi0082.github.io"><font color="#0E7A55">mahdi0082.github.io</font></link>', role_s),
           Paragraph('Pullman, WA &nbsp;·&nbsp; <link href="mailto:mahdihasan0072@outlook.com">mahdihasan0072@outlook.com</link>'
                     ' &nbsp;·&nbsp; <link href="mailto:mahdihasan.bhuiyan@wsu.edu">mahdihasan.bhuiyan@wsu.edu</link>'
                     ' &nbsp;·&nbsp; <link href="https://www.linkedin.com/in/mahdi-hasan-bhuiyan-8470aa251/"><u>LinkedIn</u></link>'
