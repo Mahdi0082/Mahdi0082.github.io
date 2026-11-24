@@ -69,6 +69,9 @@ input[type=range]{accent-color:#3FCF96}
 sc-for,sc-if{display:none !important}
 [id]{scroll-margin-top:88px}
 @media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
+.ct-poster img{transition:opacity 200ms ease}
+@media (hover:hover) and (pointer:fine){.ct-poster:hover img{opacity:0.92}}
+.ct-poster:focus-visible{outline:2px solid #3FCF96;outline-offset:3px}
 </style>
 </head>
 <body>
@@ -154,6 +157,13 @@ sc-for,sc-if{display:none !important}
 <li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Data stays with the client</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">The server only ever receives gradients for the shared model, never data or inner variables.</span></span></li>
 </ul>
 </div>
+<figure style="grid-column: 1 / -1; margin: -16px 0 0; padding-top: 32px; border-top: 1px solid rgba(255,255,255,0.08)">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">Research poster</p>
+<a class="ct-poster" href="assets/fedbic-poster.png" target="_blank" rel="noopener" aria-label="Open the FedBiC poster full size in a new tab" style="display: block; margin-top: 16px; border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,0.08); background: #F3F4F7">
+<img src="assets/fedbic-poster.jpg" width="2400" height="1240" loading="lazy" decoding="async" alt="Poster for FedBiC: Federated Bilevel Constrained Optimization, by Mahdi Hasan Bhuiyan and Xuanyu Cao. It covers the problem, how FedBiC works, its convergence guarantees, and results on constrained LASSO and fair meta-learning." style="display: block; width: 100%; height: auto">
+</a>
+<figcaption style="margin-top: 12px; font-size: 13px; color: #71717A">Open the poster full size to read the details.</figcaption>
+</figure>
 </article>
 <article class="ct-card" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 32px">
 <span style="border: 1px dashed rgba(255,255,255,0.3); border-radius: 8px; padding: 3px 10px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #D4D4D8">In progress</span>
