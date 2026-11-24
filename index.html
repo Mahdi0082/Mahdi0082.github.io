@@ -118,8 +118,58 @@ sc-for,sc-if{display:none !important}
 <div style="padding: 22px 0 22px 24px; border-left: 1px solid rgba(255,255,255,0.08)"><p style="margin: 0; font-weight: 600; font-size: 18px; color: #3FCF96">Summer 2027</p><p style="margin: 2px 0 0; font-size: 14px; color: #A1A1AA">Available for internships</p></div>
 </section>
 
+
+
+<section id="about" class="ct-about" style="display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 64px; align-items: start; padding-bottom: 120px">
+<img src="assets/portrait.jpg" alt="Mahdi Hasan Bhuiyan" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); background: #121316">
+<div>
+<h2 style="margin: 0 0 24px; font-weight: 600; font-size: 36px; letter-spacing: -0.03em">About me</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #D4D4D8; max-width: 60ch">I’m Mahdi, a PhD student in Computer Science at Washington State University. My research asks how many machines can solve nested learning problems together, like tuning a model while it trains, when each machine keeps its data private and has its own constraints.</p>
+<p style="margin: 18px 0 0; line-height: 1.7; color: #A1A1AA; max-width: 62ch">My work sits between theory and practice. I design algorithms and prove that they converge, and because I’m proficient in Python, I implement and test them myself, in experiments such as fairness-constrained learning. Before bilevel optimization I worked on applied deep learning, including medical imaging with Vision Transformers, and I still build applied projects alongside my research.</p>
+<p style="margin: 18px 0 0; line-height: 1.7; color: #A1A1AA; max-width: 62ch">Outside research I take photographs. Some of them are further down this page.</p>
+<dl style="margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; max-width: 620px">
+<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">based in</dt><dd style="margin: 4px 0 0">Pullman, WA</dd></div>
+<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">research</dt><dd style="margin: 4px 0 0">Federated Learning, Bilevel optimization</dd></div>
+<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">looking for</dt><dd style="margin: 4px 0 0">Summer 2027 internship</dd></div>
+</dl>
+</div>
+</section>
+
+<section id="work" style="padding-bottom: 120px">
+<h2 style="margin: 0 0 32px; font-weight: 600; font-size: 36px; letter-spacing: -0.03em">Research</h2>
+<div class="ct-work" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px">
+<article class="ct-card ct-fedbic" style="grid-column: 1 / -1; border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 40px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 56px; align-items: start">
+<div>
+<span style="display: inline-block; border: 1px solid rgba(255,255,255,0.24); border-radius: 8px; padding: 3px 10px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #D4D4D8">Under review · ICLR 2027</span>
+<h3 style="margin: 24px 0 0; font-weight: 600; font-size: 32px; line-height: 1.12; letter-spacing: -0.025em; max-width: 22ch">FedBiC: Federated Bilevel Constrained Optimization</h3>
+<p style="margin: 16px 0 0; color: #A1A1AA; max-width: 54ch">Many clients tune one model together while each keeps a constrained inner problem and its data private. The analysis gives convergence guarantees when only some clients take part in each round, and experiments cover fairness-constrained learning.</p>
+<div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px"><a href="#paper">Paper (link after review)</a><a href="#demo">See the idea in the demo</a></div>
+</div>
+<div style="border-left: 1px solid rgba(255,255,255,0.08); padding-left: 40px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">What FedBiC adds</p>
+<ul style="margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px">
+<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Its own constraints for every client</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">Each client’s inner problem can carry its own inequality constraints, such as fairness limits.</span></span></li>
+<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">One problem instead of two</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">Rewrites the nested problem as a single penalized one that clients can solve with ordinary gradient steps.</span></span></li>
+<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Works when clients come and go</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">Convergence guarantees hold even when only some clients take part in each round.</span></span></li>
+<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Data stays with the client</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">The server only ever receives gradients for the shared model, never data or inner variables.</span></span></li>
+</ul>
+</div>
+</article>
+<article class="ct-card" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 32px">
+<span style="border: 1px dashed rgba(255,255,255,0.3); border-radius: 8px; padding: 3px 10px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #D4D4D8">In progress</span>
+<h3 style="margin: 20px 0 0; font-weight: 600; font-size: 21px; line-height: 1.25; letter-spacing: -0.015em">DS-BiC: decentralized stochastic bilevel optimization</h3>
+<p style="margin: 10px 0 0; color: #A1A1AA; font-size: 15px">No central server: agents talk only to neighbors and learn from noisy mini-batch gradients, each with its own constraints.</p>
+</article>
+<article class="ct-card" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 32px">
+<span style="border-radius: 8px; padding: 4px 10px; background: rgba(63,207,150,0.14); font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #3FCF96">Published · IEEE ECCE 2025</span>
+<h3 style="margin: 20px 0 0; font-weight: 600; font-size: 21px; line-height: 1.25; letter-spacing: -0.015em">An Interpretable Diagnosis of Retinal Diseases Using Vision Transformer and Grad-CAM</h3>
+<p style="margin: 10px 0 0; color: #A1A1AA; font-size: 15px">Second author. Combines a CNN and a Vision Transformer into one hybrid model that classifies retinal diseases from OCT scans, and uses Grad-CAM heatmaps to show which parts of each scan drove the prediction. The hybrid beats either network on its own.</p>
+</article>
+</div>
+</section>
+
 <section id="demo" style="padding-bottom: 120px">
-<div class="ct-demo ct-in" style="animation-delay: 300ms; border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; background: #121316; padding: 40px; display: grid; grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr); gap: 48px; align-items: start">
+<div class="ct-demo" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; background: #121316; padding: 40px; display: grid; grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr); gap: 48px; align-items: start">
 <div>
 <p style="margin: 0 0 16px; font-size: 15px; color: #D4D4D8">To help you understand my research, here is an interactive demo. Press <span style="color: #3FCF96; font-weight: 600">Run 30 rounds</span> and watch it work.</p>
 <h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em">Federated bilevel optimization, in miniature</h2>
@@ -194,54 +244,6 @@ sc-for,sc-if{display:none !important}
 </div>
 
 </div>
-</div>
-</section>
-
-<section id="about" class="ct-about" style="display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 64px; align-items: start; padding-bottom: 120px">
-<img src="assets/portrait.jpg" alt="Mahdi Hasan Bhuiyan" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); background: #121316">
-<div>
-<h2 style="margin: 0 0 24px; font-weight: 600; font-size: 36px; letter-spacing: -0.03em">About me</h2>
-<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #D4D4D8; max-width: 60ch">I’m Mahdi, a PhD student in Computer Science at Washington State University. My research asks how many machines can solve nested learning problems together, like tuning a model while it trains, when each machine keeps its data private and has its own constraints.</p>
-<p style="margin: 18px 0 0; line-height: 1.7; color: #A1A1AA; max-width: 62ch">My work sits between theory and practice. I design algorithms and prove that they converge, and because I’m proficient in Python, I implement and test them myself, in experiments such as fairness-constrained learning. Before bilevel optimization I worked on applied deep learning, including medical imaging with Vision Transformers, and I still build applied projects alongside my research.</p>
-<p style="margin: 18px 0 0; line-height: 1.7; color: #A1A1AA; max-width: 62ch">Outside research I take photographs. Some of them are further down this page.</p>
-<dl style="margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; max-width: 620px">
-<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">based in</dt><dd style="margin: 4px 0 0">Pullman, WA</dd></div>
-<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">research</dt><dd style="margin: 4px 0 0">Federated Learning, Bilevel optimization</dd></div>
-<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">looking for</dt><dd style="margin: 4px 0 0">Summer 2027 internship</dd></div>
-</dl>
-</div>
-</section>
-
-<section id="work" style="padding-bottom: 120px">
-<h2 style="margin: 0 0 32px; font-weight: 600; font-size: 36px; letter-spacing: -0.03em">Research</h2>
-<div class="ct-work" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px">
-<article class="ct-card ct-fedbic" style="grid-column: 1 / -1; border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 40px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 56px; align-items: start">
-<div>
-<span style="display: inline-block; border: 1px solid rgba(255,255,255,0.24); border-radius: 8px; padding: 3px 10px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #D4D4D8">Under review · ICLR 2027</span>
-<h3 style="margin: 24px 0 0; font-weight: 600; font-size: 32px; line-height: 1.12; letter-spacing: -0.025em; max-width: 22ch">FedBiC: Federated Bilevel Constrained Optimization</h3>
-<p style="margin: 16px 0 0; color: #A1A1AA; max-width: 54ch">Many clients tune one model together while each keeps a constrained inner problem and its data private. The analysis gives convergence guarantees when only some clients take part in each round, and experiments cover fairness-constrained learning.</p>
-<div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px"><a href="#paper">Paper (link after review)</a><a href="#demo">See the idea in the demo</a></div>
-</div>
-<div style="border-left: 1px solid rgba(255,255,255,0.08); padding-left: 40px">
-<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">What FedBiC adds</p>
-<ul style="margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px">
-<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Its own constraints for every client</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">Each client’s inner problem can carry its own inequality constraints, such as fairness limits.</span></span></li>
-<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">One problem instead of two</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">Rewrites the nested problem as a single penalized one that clients can solve with ordinary gradient steps.</span></span></li>
-<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Works when clients come and go</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">Convergence guarantees hold even when only some clients take part in each round.</span></span></li>
-<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Data stays with the client</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">The server only ever receives gradients for the shared model, never data or inner variables.</span></span></li>
-</ul>
-</div>
-</article>
-<article class="ct-card" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 32px">
-<span style="border: 1px dashed rgba(255,255,255,0.3); border-radius: 8px; padding: 3px 10px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #D4D4D8">In progress</span>
-<h3 style="margin: 20px 0 0; font-weight: 600; font-size: 21px; line-height: 1.25; letter-spacing: -0.015em">DS-BiC: decentralized stochastic bilevel optimization</h3>
-<p style="margin: 10px 0 0; color: #A1A1AA; font-size: 15px">No central server: agents talk only to neighbors and learn from noisy mini-batch gradients, each with its own constraints.</p>
-</article>
-<article class="ct-card" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 32px">
-<span style="border-radius: 8px; padding: 4px 10px; background: rgba(63,207,150,0.14); font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #3FCF96">Published · IEEE ECCE 2025</span>
-<h3 style="margin: 20px 0 0; font-weight: 600; font-size: 21px; line-height: 1.25; letter-spacing: -0.015em">An Interpretable Diagnosis of Retinal Diseases Using Vision Transformer and Grad-CAM</h3>
-<p style="margin: 10px 0 0; color: #A1A1AA; font-size: 15px">Second author. Combines a CNN and a Vision Transformer into one hybrid model that classifies retinal diseases from OCT scans, and uses Grad-CAM heatmaps to show which parts of each scan drove the prediction. The hybrid beats either network on its own.</p>
-</article>
 </div>
 </section>
 
