@@ -109,8 +109,6 @@ projects = [
      "evaluated on Messidor-2 without retraining."),
     ("H&amp;M Personalized Fashion Recommendations", "Fall 2026",
      "Team project, data science course. Predicts each customer’s next purchases from H&amp;M’s Kaggle data."),
-    ("Engine Valve Design with the Nelder–Mead Simplex Method", "",
-     "Course project, computational optimization. Implemented Nelder–Mead from scratch for valve design."),
     ("Stock Forecasting with News Sentiment", "",
      "Combined XGBoost and an LSTM with sentiment features from news text to forecast price movement."),
 ]
