@@ -1,0 +1,704 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mahdi Hasan Bhuiyan · ML researcher, PhD student at WSU</title>
+<meta name="description" content="PhD student in Computer Science at Washington State University working on federated and decentralized bilevel optimization. Open to Summer 2027 PhD internships in applied science, research science and data science.">
+<meta name="author" content="Mahdi Hasan Bhuiyan">
+<meta name="theme-color" content="#0C0D0F">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="canonical" href="https://mahdi0082.github.io/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mahdi Hasan Bhuiyan · ML researcher">
+<meta property="og:description" content="PhD student in Computer Science at Washington State University working on federated and decentralized bilevel optimization. Open to Summer 2027 PhD internships in applied science, research science and data science.">
+<meta property="og:url" content="https://mahdi0082.github.io/">
+<meta property="og:image" content="https://mahdi0082.github.io/assets/portrait.jpg">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0C0D0F}
+::selection{background:#3FCF96;color:#06140E}
+a{color:#EDEDEF;text-underline-offset:3px}
+a:hover{color:#3FCF96}
+:focus-visible{outline:2px solid #3FCF96;outline-offset:2px}
+.ct-btn{transition:transform 220ms cubic-bezier(0.16,1,0.3,1),background-color 220ms cubic-bezier(0.16,1,0.3,1),border-color 220ms cubic-bezier(0.16,1,0.3,1)}
+.ct-btn:active{transform:translateY(1px) scale(0.98)}
+.ct-btn:disabled{opacity:0.55;cursor:default}
+.ct-primary:hover{background:#5ADBA8 !important}
+.ct-ghost:hover{border-color:rgba(255,255,255,0.32) !important}
+.ct-card{transition:border-color 300ms cubic-bezier(0.16,1,0.3,1),transform 300ms cubic-bezier(0.16,1,0.3,1)}
+.ct-card:hover{border-color:rgba(63,207,150,0.45) !important;transform:translateY(-2px)}
+.ct-photo{transition:border-color 300ms cubic-bezier(0.16,1,0.3,1),transform 300ms cubic-bezier(0.16,1,0.3,1)}
+.ct-photo:hover{border-color:rgba(63,207,150,0.5) !important}
+.ct-photo:active{transform:scale(0.99)}
+.ct-shot img{transition:transform 400ms cubic-bezier(0.23,1,0.32,1)}
+@media (hover:hover) and (pointer:fine){.ct-shot:hover img{transform:scale(1.03);transition:transform 700ms cubic-bezier(0.23,1,0.32,1)}}
+@media (prefers-reduced-motion: reduce){.ct-shot:hover img{transform:none !important}}
+.ct-school{transition:border-color 200ms ease}
+.ct-school-photo{transform:scale(1);transition:transform 450ms cubic-bezier(0.23,1,0.32,1)}
+@media (hover:hover) and (pointer:fine){
+.ct-school:hover{border-color:rgba(63,207,150,0.45) !important}
+.ct-school:hover .ct-school-photo{transform:scale(1.05);transition:transform 700ms cubic-bezier(0.23,1,0.32,1)}
+}
+@media (prefers-reduced-motion: reduce){.ct-school:hover .ct-school-photo{transform:none !important}}
+.ct-anim{transition:cx 300ms cubic-bezier(0.16,1,0.3,1),cy 300ms cubic-bezier(0.16,1,0.3,1),y 300ms cubic-bezier(0.16,1,0.3,1),height 300ms cubic-bezier(0.16,1,0.3,1),fill-opacity 300ms cubic-bezier(0.16,1,0.3,1)}
+input[type=range]{accent-color:#3FCF96}
+@media (prefers-reduced-motion: no-preference){
+.ct-breathe{animation:ctBreathe 2.4s cubic-bezier(0.37,0,0.63,1) infinite}
+.ct-in{animation:ctIn 600ms cubic-bezier(0.23,1,0.32,1) both}
+.ct-flow{animation:ctFlow 900ms linear infinite}
+}
+@keyframes ctBreathe{0%,100%{opacity:1;transform:scale(1)}50%{opacity:0.45;transform:scale(0.7)}}
+@keyframes ctIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes ctFlow{to{stroke-dashoffset:-20}}
+@media (max-width:767px){
+.ct-split,.ct-hero,.ct-demo,.ct-fedbic,.ct-cta,.ct-proof,.ct-work,.ct-zig,.ct-about,.ct-gallery,.ct-ctrl,.ct-schools{grid-template-columns:minmax(0,1fr) !important}
+.ct-work > *,.ct-zig > *,.ct-gallery > *{grid-column:auto !important;grid-row:auto !important}
+.ct-h1{font-size:44px !important}
+.ct-demo{padding:24px !important;gap:32px !important}
+.ct-cta{padding:36px 24px !important}
+.ct-fedbic > div + div{border-left:0 !important;padding-left:0 !important}
+.ct-proof > div{border-left:0 !important;padding:14px 0 !important}
+.ct-navlinks{display:none !important}
+.ct-xp{grid-template-columns:minmax(0,1fr) !important;gap:4px !important}
+}
+</style>
+<style>
+sc-for,sc-if{display:none !important}
+[id]{scroll-margin-top:88px}
+@media (prefers-reduced-motion: no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div id="dc-root">
+<div style="min-height: 100vh; background: #0C0D0F; color: #EDEDEF; font-family: 'Schibsted Grotesk', sans-serif; font-size: 16px; line-height: 1.6">
+
+<header style="position: sticky; top: 0; z-index: 10; background: rgba(12,13,15,0.78); backdrop-filter: blur(14px); -webkit-backdrop-filter: blur(14px); border-bottom: 1px solid rgba(255,255,255,0.06)">
+<div style="max-width: 1320px; margin: 0 auto; padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<a href="#top" style="text-decoration: none; font-weight: 600; letter-spacing: -0.01em">M. H. Bhuiyan</a>
+<nav aria-label="Main" style="display: flex; align-items: center; gap: 28px; font-size: 14px">
+<div class="ct-navlinks" style="display: flex; gap: 28px">
+<a href="#about" style="text-decoration: none; color: #A1A1AA">About</a>
+<a href="#work" style="text-decoration: none; color: #A1A1AA">Research</a>
+<a href="#projects" style="text-decoration: none; color: #A1A1AA">Projects</a>
+<a href="#education" style="text-decoration: none; color: #A1A1AA">Education</a>
+<a href="#photography" style="text-decoration: none; color: #A1A1AA">Photography</a>
+<a href="#contact" style="text-decoration: none; color: #A1A1AA">Contact</a>
+</div>
+<a class="ct-btn ct-primary" href="Mahdi_Hasan_Bhuiyan_CV.pdf" download="Mahdi_Hasan_Bhuiyan_CV.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; height: 38px; padding: 0 16px; border-radius: 10px; background: #3FCF96; color: #06140E; text-decoration: none; font-weight: 600">Download CV</a>
+</nav>
+</div>
+</header>
+
+<main id="top" style="max-width: 1320px; margin: 0 auto; padding: 0 32px">
+
+<section class="ct-hero" style="display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr); gap: 64px; align-items: end; padding: 104px 0 72px">
+<div>
+<p class="ct-in" style="animation-delay: 0ms; margin: 0 0 28px; display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: #A1A1AA">
+<span class="ct-breathe" aria-hidden="true" style="width: 8px; height: 8px; border-radius: 9999px; background: #3FCF96"></span>Open to Summer 2027 internships · applied science, data science</p>
+<h1 class="ct-h1 ct-in" style="animation-delay: 50ms; margin: 0; font-weight: 600; font-size: 64px; line-height: 1; letter-spacing: -0.035em">Mahdi Hasan Bhuiyan</h1>
+<p class="ct-in" style="animation-delay: 110ms; margin: 22px 0 0; font-size: 26px; line-height: 1.35; color: #D4D4D8; max-width: 26ch; letter-spacing: -0.01em">I make learning problems that sit inside other learning problems work across many machines.</p>
+</div>
+<div style="padding-bottom: 4px">
+<p class="ct-in" style="animation-delay: 160ms; margin: 0; max-width: 48ch; font-size: 17px; line-height: 1.65; color: #A1A1AA">PhD student in Computer Science at Washington State University, working on federated and decentralized bilevel optimization with convergence proofs. The demo below shows the kind of problem I work on: federated bilevel optimization.</p>
+<div class="ct-in" style="animation-delay: 220ms; margin-top: 32px; display: flex; flex-wrap: wrap; gap: 12px">
+<a class="ct-btn ct-primary" href="Mahdi_Hasan_Bhuiyan_CV.pdf" download="Mahdi_Hasan_Bhuiyan_CV.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; gap: 10px; height: 48px; padding: 0 22px; border-radius: 12px; background: #3FCF96; color: #06140E; text-decoration: none; font-weight: 600">Download CV
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 4v12"></path><path d="M6 11l6 6 6-6"></path><path d="M5 20h14"></path></svg></a>
+<a class="ct-btn ct-ghost" href="#contact" style="display: inline-flex; align-items: center; height: 48px; padding: 0 22px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.14); text-decoration: none; font-weight: 500">Get in touch</a>
+</div>
+</div>
+</section>
+
+<section aria-label="Highlights" class="ct-proof" style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-top: 1px solid rgba(255,255,255,0.08); border-bottom: 1px solid rgba(255,255,255,0.08); margin-bottom: 72px">
+<div style="padding: 22px 24px 22px 0"><p style="margin: 0; font-weight: 600; font-size: 18px">ICLR 2027</p><p style="margin: 2px 0 0; font-size: 14px; color: #A1A1AA">FedBiC, under review</p></div>
+<div style="padding: 22px 24px; border-left: 1px solid rgba(255,255,255,0.08)"><p style="margin: 0; font-weight: 600; font-size: 18px">IEEE ECCE 2025</p><p style="margin: 2px 0 0; font-size: 14px; color: #A1A1AA">Published, second author</p></div>
+<div style="padding: 22px 24px; border-left: 1px solid rgba(255,255,255,0.08)"><p style="margin: 0; font-weight: 600; font-size: 18px">PhD, WSU</p><p style="margin: 2px 0 0; font-size: 14px; color: #A1A1AA">Computer Science, since 2025</p></div>
+<div style="padding: 22px 0 22px 24px; border-left: 1px solid rgba(255,255,255,0.08)"><p style="margin: 0; font-weight: 600; font-size: 18px; color: #3FCF96">Summer 2027</p><p style="margin: 2px 0 0; font-size: 14px; color: #A1A1AA">Available for internships</p></div>
+</section>
+
+<section id="demo" style="padding-bottom: 120px">
+<div class="ct-demo ct-in" style="animation-delay: 300ms; border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; background: #121316; padding: 40px; display: grid; grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.18fr); gap: 48px; align-items: start">
+<div>
+<p style="margin: 0 0 16px; font-size: 15px; color: #D4D4D8">To help you understand my research, here is an interactive demo. Press <span style="color: #3FCF96; font-weight: 600">Run 30 rounds</span> and watch it work.</p>
+<h2 style="margin: 0; font-weight: 600; font-size: 30px; line-height: 1.15; letter-spacing: -0.025em">Federated bilevel optimization, in miniature</h2>
+<p style="margin: 8px 0 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">toy model · 5 clients</p>
+<div style="margin-top: 20px; font-size: 14px; line-height: 1.65; color: #A1A1AA">
+<p style="margin: 0; max-width: 72ch">Five clients, think hospitals or phones, each keep their own private data. Together they want one shared setting <span style="font-family: 'JetBrains Mono', monospace; color: #EDEDEF">x</span> that works well for all of them: that is the outer problem. How good <span style="font-family: 'JetBrains Mono', monospace; color: #EDEDEF">x</span> is for a client depends on the answer to that client’s own inner problem, which it solves on its own data. A problem nested inside another like this is a bilevel problem, and solving it without anyone sharing data is federated bilevel optimization.</p>
+<ol style="margin: 10px 0 0; padding-left: 20px; display: grid; gap: 2px">
+<li>The server sends the current <span style="font-family: 'JetBrains Mono', monospace; color: #EDEDEF">x</span> to a few clients (they turn green).</li>
+<li>Each one works on its inner problem: its gray dot moves toward the hollow circle, the exact answer for this <span style="font-family: 'JetBrains Mono', monospace; color: #EDEDEF">x</span>.</li>
+<li>It sends back one gradient, a direction to move <span style="font-family: 'JetBrains Mono', monospace; color: #EDEDEF">x</span>. Its data never leaves it.</li>
+<li>The server averages those directions and moves <span style="font-family: 'JetBrains Mono', monospace; color: #EDEDEF">x</span>. On the server bar, the dot is <span style="font-family: 'JetBrains Mono', monospace; color: #EDEDEF">x</span> and the tick is the best possible value.</li>
+</ol>
+</div>
+<div style="margin-top: 28px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,0.08)">
+<div class="ct-ctrl" style="margin-top: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+<label style="display: block; font-size: 13px; color: #A1A1AA">Clients per round: <span style="color: #EDEDEF">{{mLabel}}</span>
+<input type="range" min="1" max="5" step="1" data-dc-a-value="{{m}}" data-dc-on-input="{{onM}}" style="display: block; width: 100%; margin-top: 8px"></label>
+<label style="display: block; font-size: 13px; color: #A1A1AA">Inner steps per round: <span style="color: #EDEDEF">{{E}}</span>
+<input type="range" min="1" max="8" step="1" data-dc-a-value="{{E}}" data-dc-on-input="{{onE}}" style="display: block; width: 100%; margin-top: 8px"></label>
+</div>
+<div role="group" aria-label="Clients online" style="margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px">
+<span style="font-size: 13px; color: #A1A1AA; margin-right: 4px">Online:</span>
+<sc-for data-dc-a-list="{{chips}}" as="c" hint-placeholder-count="5">
+<button class="ct-btn" data-dc-on-click="{{c.toggle}}" data-dc-a-aria-pressed="{{c.on}}" data-dc-a-style="height: 32px; padding: 0 12px; border-radius: 8px; font: inherit; font-size: 13px; cursor: pointer; border: 1px solid {{c.border}}; background: {{c.bg}}; color: {{c.fg}}">{{c.label}}</button>
+</sc-for>
+</div>
+<div style="margin-top: 14px; display: flex; flex-wrap: wrap; align-items: center; gap: 10px">
+<button class="ct-btn ct-primary" data-dc-on-click="{{runOne}}" data-dc-a-disabled="{{busy}}" style="height: 40px; padding: 0 16px; border-radius: 10px; border: 0; background: #3FCF96; color: #06140E; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Run 1 round</button>
+<button class="ct-btn ct-ghost" data-dc-on-click="{{runMany}}" data-dc-a-disabled="{{busy}}" style="height: 40px; padding: 0 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.14); background: transparent; color: #EDEDEF; font: inherit; font-size: 14px; cursor: pointer">{{manyLabel}}</button>
+<button class="ct-btn ct-ghost" data-dc-on-click="{{reset}}" style="height: 40px; padding: 0 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.14); background: transparent; color: #EDEDEF; font: inherit; font-size: 14px; cursor: pointer">Reset</button>
+</div>
+<p style="margin: 14px 0 0; font-size: 13px; line-height: 1.55; color: #A1A1AA; max-width: 70ch">{{hint}}</p>
+</div>
+</div>
+<div>
+<svg viewBox="0 0 640 436" width="100%" role="img" data-dc-a-aria-label="{{demoLabel}}" style="display: block">
+<rect x="200" y="12" width="240" height="84" rx="12" fill="#16171B" stroke="rgba(63,207,150,0.35)"></rect>
+<text x="320" y="34" text-anchor="middle" fill="#A1A1AA" font-family="JetBrains Mono, monospace" font-size="11">server · shared upper-level model</text>
+<text x="320" y="58" text-anchor="middle" fill="#EDEDEF" font-family="JetBrains Mono, monospace" font-size="17">x = {{xText}}</text>
+<line x1="250" y1="78" x2="390" y2="78" stroke="#3F3F46" stroke-width="2" stroke-linecap="round"></line>
+<line data-dc-a-x1="{{starX}}" y1="71" data-dc-a-x2="{{starX}}" y2="85" stroke="#3FCF96" stroke-opacity="0.5" stroke-width="2"></line>
+<circle class="ct-anim" data-dc-a-cx="{{serverX}}" cy="78" r="5" fill="#3FCF96"></circle>
+<text x="320" y="118" text-anchor="middle" fill="#71717A" font-family="JetBrains Mono, monospace" font-size="10">averages the gradients it receives, then updates x</text>
+<sc-for data-dc-a-list="{{clients}}" as="k" hint-placeholder-count="5">
+<line x1="320" y1="126" data-dc-a-x2="{{k.cx}}" y2="168" data-dc-a-stroke="{{k.linkColor}}" data-dc-a-stroke-width="{{k.linkWidth}}" data-dc-a-stroke-dasharray="{{k.dash}}" data-dc-a-class="{{k.flow}}"></line>
+<rect data-dc-a-x="{{k.left}}" y="170" width="104" height="250" rx="12" fill="#0E0F12" data-dc-a-stroke="{{k.stroke}}" data-dc-a-opacity="{{k.fade}}"></rect>
+<text data-dc-a-x="{{k.cx}}" y="192" text-anchor="middle" fill="#D4D4D8" font-family="Schibsted Grotesk, sans-serif" font-size="12" font-weight="600" data-dc-a-opacity="{{k.fade}}">{{k.name}}</text>
+<line data-dc-a-x1="{{k.cx}}" y1="208" data-dc-a-x2="{{k.cx}}" y2="372" stroke="#3F3F46" stroke-width="2" stroke-linecap="round" data-dc-a-opacity="{{k.fade}}"></line>
+<circle class="ct-anim" data-dc-a-cx="{{k.cx}}" data-dc-a-cy="{{k.tY}}" r="7" fill="none" stroke="#71717A" stroke-width="1.5" data-dc-a-opacity="{{k.fade}}"></circle>
+<circle class="ct-anim" data-dc-a-cx="{{k.cx}}" data-dc-a-cy="{{k.dY}}" r="7" data-dc-a-fill="{{k.dot}}" stroke="#0E0F12" stroke-width="2"></circle>
+<text data-dc-a-x="{{k.cx}}" y="394" text-anchor="middle" data-dc-a-fill="{{k.statusColor}}" font-family="JetBrains Mono, monospace" font-size="10" data-dc-a-opacity="{{k.fade}}">{{k.status}}</text>
+<text data-dc-a-x="{{k.cx}}" y="410" text-anchor="middle" fill="#71717A" font-family="JetBrains Mono, monospace" font-size="10" data-dc-a-opacity="{{k.fade}}">y = {{k.yText}}</text>
+</sc-for>
+</svg>
+<div style="display: flex; flex-wrap: wrap; gap: 8px 16px; padding: 12px 2px 0; font-size: 12px; color: #A1A1AA">
+<span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 9999px; background: #3FCF96"></span>sampled this round</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 9999px; background: #D4D4D8"></span>client’s current inner solution</span>
+<span style="display: inline-flex; align-items: center; gap: 6px"><span aria-hidden="true" style="width: 10px; height: 10px; border-radius: 9999px; border: 1.5px solid #71717A"></span>exact inner solution for the current x</span>
+</div>
+<svg viewBox="0 0 640 112" width="100%" role="img" data-dc-a-aria-label="{{chartLabel}}" style="display: block; margin-top: 14px">
+<rect x="0" y="0" width="640" height="112" rx="10" fill="#0E0F12"></rect>
+<line x1="40" y1="92" x2="620" y2="92" stroke="#3FCF96" stroke-opacity="0.35" stroke-dasharray="4 4"></line>
+<text x="616" y="86" text-anchor="end" fill="#71717A" font-family="JetBrains Mono, monospace" font-size="10">optimum</text>
+<text x="40" y="20" fill="#71717A" font-family="JetBrains Mono, monospace" font-size="10">gap to optimum, last 40 rounds</text>
+<polyline data-dc-a-points="{{chart}}" fill="none" stroke="#3FCF96" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"></polyline>
+</svg>
+<div style="margin-top: 16px; padding: 0 2px; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px">
+<div><span style="display: block; color: #71717A; font-size: 11px">round</span><span style="font-variant-numeric: tabular-nums">{{round}}</span></div>
+<div><span style="display: block; color: #71717A; font-size: 11px">shared x</span><span style="font-variant-numeric: tabular-nums">{{xText}}</span></div>
+<div><span style="display: block; color: #71717A; font-size: 11px">global cost</span><span style="font-variant-numeric: tabular-nums">{{phiText}}</span></div>
+<div><span style="display: block; color: #71717A; font-size: 11px">gap to optimum</span><span style="font-variant-numeric: tabular-nums; color: #3FCF96">{{gapText}}</span></div>
+</div>
+
+</div>
+</div>
+</section>
+
+<section id="about" class="ct-about" style="display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr); gap: 64px; align-items: start; padding-bottom: 120px">
+<img src="assets/portrait.jpg" alt="Mahdi Hasan Bhuiyan" style="display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); background: #121316">
+<div>
+<h2 style="margin: 0 0 24px; font-weight: 600; font-size: 36px; letter-spacing: -0.03em">About me</h2>
+<p style="margin: 0; font-size: 18px; line-height: 1.65; color: #D4D4D8; max-width: 60ch">I’m Mahdi, a PhD student in Computer Science at Washington State University. My research asks how many machines can solve nested learning problems together, like tuning a model while it trains, when each machine keeps its data private and has its own constraints.</p>
+<p style="margin: 18px 0 0; line-height: 1.7; color: #A1A1AA; max-width: 62ch">My work sits between theory and practice. I design algorithms and prove that they converge, and because I’m proficient in Python, I implement and test them myself, in experiments such as fairness-constrained learning. Before bilevel optimization I worked on applied deep learning, including medical imaging with Vision Transformers, and I still build applied projects alongside my research.</p>
+<p style="margin: 18px 0 0; line-height: 1.7; color: #A1A1AA; max-width: 62ch">Outside research I take photographs. Some of them are further down this page.</p>
+<dl style="margin: 32px 0 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 16px; max-width: 620px">
+<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">based in</dt><dd style="margin: 4px 0 0">Pullman, WA</dd></div>
+<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">research</dt><dd style="margin: 4px 0 0">Federated Learning, Bilevel optimization</dd></div>
+<div style="border-top: 1px solid rgba(255,255,255,0.1); padding-top: 12px"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">looking for</dt><dd style="margin: 4px 0 0">Summer 2027 internship</dd></div>
+</dl>
+</div>
+</section>
+
+<section id="work" style="padding-bottom: 120px">
+<h2 style="margin: 0 0 32px; font-weight: 600; font-size: 36px; letter-spacing: -0.03em">Research</h2>
+<div class="ct-work" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px">
+<article class="ct-card ct-fedbic" style="grid-column: 1 / -1; border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 40px; display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr); gap: 56px; align-items: start">
+<div>
+<span style="display: inline-block; border: 1px solid rgba(255,255,255,0.24); border-radius: 8px; padding: 3px 10px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #D4D4D8">Under review · ICLR 2027</span>
+<h3 style="margin: 24px 0 0; font-weight: 600; font-size: 32px; line-height: 1.12; letter-spacing: -0.025em; max-width: 22ch">FedBiC: Federated Bilevel Constrained Optimization</h3>
+<p style="margin: 16px 0 0; color: #A1A1AA; max-width: 54ch">Many clients tune one model together while each keeps a constrained inner problem and its data private. The analysis gives convergence guarantees when only some clients take part in each round, and experiments cover fairness-constrained learning.</p>
+<div style="margin-top: 28px; display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px"><a href="#paper">Paper (link after review)</a><a href="#demo">See the idea in the demo</a></div>
+</div>
+<div style="border-left: 1px solid rgba(255,255,255,0.08); padding-left: 40px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">What FedBiC adds</p>
+<ul style="margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 18px">
+<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Its own constraints for every client</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">Each client’s inner problem can carry its own inequality constraints, such as fairness limits.</span></span></li>
+<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">One problem instead of two</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">Rewrites the nested problem as a single penalized one that clients can solve with ordinary gradient steps.</span></span></li>
+<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Works when clients come and go</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">Convergence guarantees hold even when only some clients take part in each round.</span></span></li>
+<li style="display: flex; gap: 12px"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3FCF96" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="margin-top: 4px; flex: none"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg><span><span style="display: block; font-weight: 600; color: #EDEDEF">Data stays with the client</span><span style="display: block; margin-top: 2px; font-size: 15px; color: #A1A1AA">The server only ever receives gradients for the shared model, never data or inner variables.</span></span></li>
+</ul>
+</div>
+</article>
+<article class="ct-card" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 32px">
+<span style="border: 1px dashed rgba(255,255,255,0.3); border-radius: 8px; padding: 3px 10px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #D4D4D8">In progress</span>
+<h3 style="margin: 20px 0 0; font-weight: 600; font-size: 21px; line-height: 1.25; letter-spacing: -0.015em">DS-BiC: decentralized stochastic bilevel optimization</h3>
+<p style="margin: 10px 0 0; color: #A1A1AA; font-size: 15px">No central server: agents talk only to neighbors and learn from noisy mini-batch gradients, each with its own constraints.</p>
+</article>
+<article class="ct-card" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 32px">
+<span style="border-radius: 8px; padding: 4px 10px; background: rgba(63,207,150,0.14); font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #3FCF96">Published · IEEE ECCE 2025</span>
+<h3 style="margin: 20px 0 0; font-weight: 600; font-size: 21px; line-height: 1.25; letter-spacing: -0.015em">An Interpretable Diagnosis of Retinal Diseases Using Vision Transformer and Grad-CAM</h3>
+<p style="margin: 10px 0 0; color: #A1A1AA; font-size: 15px">Second author. Combines a CNN and a Vision Transformer into one hybrid model that classifies retinal diseases from OCT scans, and uses Grad-CAM heatmaps to show which parts of each scan drove the prediction. The hybrid beats either network on its own.</p>
+</article>
+</div>
+</section>
+
+<section id="projects" style="padding-bottom: 120px">
+<h2 style="margin: 0 0 32px; font-weight: 600; font-size: 36px; letter-spacing: -0.03em">Applied projects</h2>
+<div class="ct-zig" style="display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); grid-template-rows: auto auto; gap: 20px">
+<article class="ct-card" style="grid-row: span 2; border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 36px; display: flex; flex-direction: column">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">CPTS 541 Computer Vision · team · in progress</p>
+<h3 style="margin: 14px 0 0; font-weight: 600; font-size: 28px; line-height: 1.18; letter-spacing: -0.02em; max-width: 26ch">Diabetic retinopathy screening with confidence-based referral</h3>
+<p style="margin: 12px 0 0; color: #A1A1AA; font-size: 15px; max-width: 56ch">Trained on APTOS 2019. Cases the model is unsure about go to a specialist instead of getting an automatic grade. Tested on Messidor-2 without retraining, to check that it holds up on images from a different source.</p>
+<div style="margin-top: auto; padding-top: 28px; display: flex; flex-wrap: wrap; gap: 20px; font-size: 14px"><span style="color: #71717A">Report (coming)</span></div>
+</article>
+<article class="ct-card" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 32px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">Data science course · team · in progress</p>
+<h3 style="margin: 14px 0 0; font-weight: 600; font-size: 22px; line-height: 1.2; letter-spacing: -0.02em">H&amp;M fashion recommendations</h3>
+<p style="margin: 10px 0 0; color: #A1A1AA; font-size: 15px">Predicts each customer’s next purchases from H&amp;M’s Kaggle transaction data.</p>
+</article>
+<article class="ct-card" style="border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; background: #121316; padding: 32px">
+<p style="margin: 0; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">XGBoost · LSTM · sentiment</p>
+<h3 style="margin: 14px 0 0; font-weight: 600; font-size: 22px; line-height: 1.2; letter-spacing: -0.02em">Stock forecasting with news sentiment</h3>
+<p style="margin: 10px 0 0; color: #A1A1AA; font-size: 15px">Gradient-boosted trees and an LSTM, combined with sentiment from news text.</p>
+</article>
+</div>
+</section>
+
+<section id="education" style="padding-bottom: 120px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 12px; margin-bottom: 24px">
+<h2 style="margin: 0; font-weight: 600; font-size: 36px; letter-spacing: -0.03em">Education &amp; experience</h2>
+</div>
+<div class="ct-schools" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px">
+<article class="ct-school" style="position: relative; overflow: hidden; aspect-ratio: 1 / 1; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); background: #0E0F12">
+<div class="ct-school-photo" aria-hidden="true" style="position: absolute; inset: 0; background: #1A1B20">
+<img src="assets/wsu.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 50%; display: block">
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,13,15,0.94) 0%, rgba(12,13,15,0.62) 45%, rgba(12,13,15,0.28) 100%)"></div>
+<div style="position: relative; height: 100%; box-sizing: border-box; padding: 32px; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #D4D4D8"><span>2025 – 2030 (expected)</span><span>Pullman, WA</span></div>
+<div>
+<h3 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.08; letter-spacing: -0.025em">Washington State University</h3>
+<p style="margin: 12px 0 0; font-weight: 500; color: #EDEDEF">PhD in Computer Science · Graduate Research Assistant</p>
+<p style="margin: 4px 0 0; color: #A1A1AA; font-size: 15px">Federated and decentralized bilevel optimization.</p>
+<p style="margin: 18px 0 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #3FCF96; font-variant-numeric: tabular-nums">CGPA 3.87 / 4.00 · current</p>
+</div>
+</div>
+</article>
+<article class="ct-school" style="position: relative; overflow: hidden; aspect-ratio: 1 / 1; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); background: #0E0F12">
+<div class="ct-school-photo" aria-hidden="true" style="position: absolute; inset: 0; background: #1A1B20">
+<img src="assets/brac.jpg" alt="" style="position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; display: block">
+</div>
+<div aria-hidden="true" style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,13,15,0.94) 0%, rgba(12,13,15,0.62) 45%, rgba(12,13,15,0.28) 100%)"></div>
+<div style="position: relative; height: 100%; box-sizing: border-box; padding: 32px; display: flex; flex-direction: column; justify-content: space-between">
+<div style="display: flex; justify-content: space-between; gap: 12px; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #D4D4D8"><span>2020 – 2024</span><span>Dhaka, Bangladesh</span></div>
+<div>
+<h3 style="margin: 0; font-weight: 600; font-size: 34px; line-height: 1.08; letter-spacing: -0.025em">BRAC University</h3>
+<p style="margin: 12px 0 0; font-weight: 500; color: #EDEDEF">B.Sc. in Computer Science</p>
+<p style="margin: 18px 0 0; font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #D4D4D8; font-variant-numeric: tabular-nums">CGPA 3.61 / 4.00</p>
+</div>
+</div>
+</article>
+</div>
+<div style="margin-top: 20px; border-radius: 20px; border: 1px solid rgba(255,255,255,0.08); background: #0E0F12; padding: 28px 32px 6px">
+<p style="margin: 0 0 6px; font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">Experience</p>
+<div class="ct-xp" style="display: grid; grid-template-columns: 190px minmax(0, 1fr) auto; gap: 24px; align-items: baseline; padding: 20px 0">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A1A1AA; font-variant-numeric: tabular-nums">2025 – present</span>
+<div>
+<h3 style="margin: 0; font-weight: 600; font-size: 19px; letter-spacing: -0.01em; color: #EDEDEF">Graduate Research Assistant</h3>
+<p style="margin: 6px 0 0; color: #A1A1AA; font-size: 15px; line-height: 1.55; max-width: 62ch">Design and analyze federated and decentralized bilevel optimization methods, and run the experiments in Python. Led FedBiC, now under review at ICLR 2027.</p>
+</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A1A1AA">WSU</span>
+</div>
+<div class="ct-xp" style="display: grid; grid-template-columns: 190px minmax(0, 1fr) auto; gap: 24px; align-items: baseline; padding: 20px 0; border-top: 1px solid rgba(255,255,255,0.06)">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A1A1AA; font-variant-numeric: tabular-nums">Fall 2026</span>
+<div>
+<h3 style="margin: 0; font-weight: 600; font-size: 19px; letter-spacing: -0.01em; color: #EDEDEF">Teaching Assistant · CptS 423 and CptS 484</h3>
+<p style="margin: 6px 0 0; color: #A1A1AA; font-size: 15px; line-height: 1.55; max-width: 62ch">Grade reports and assignments and give written feedback in two software engineering courses: Software Design Project II, the senior capstone, and Software Requirements.</p>
+</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A1A1AA">WSU</span>
+</div>
+<p style="margin: 0; padding: 22px 0 6px; border-top: 1px solid rgba(255,255,255,0.06); font-family: 'JetBrains Mono', monospace; font-size: 12px; color: #71717A">Service</p>
+<div class="ct-xp" style="display: grid; grid-template-columns: 190px minmax(0, 1fr) auto; gap: 24px; align-items: baseline; padding: 20px 0">
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A1A1AA; font-variant-numeric: tabular-nums">2026</span>
+<div>
+<h3 style="margin: 0; font-weight: 600; font-size: 19px; letter-spacing: -0.01em; color: #EDEDEF">Reviewer · ICLR 2027</h3>
+<p style="margin: 6px 0 0; color: #A1A1AA; font-size: 15px; line-height: 1.55; max-width: 62ch">Served as a reviwer for the International Conference on Learning Representations, one of the most prestigious machine learning conferences.</p>
+</div>
+<span style="font-family: 'JetBrains Mono', monospace; font-size: 13px; color: #A1A1AA">ICLR</span>
+</div>
+</div>
+</section>
+
+<section id="photography" style="padding-bottom: 120px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 16px; margin-bottom: 32px">
+<h2 style="margin: 0; font-weight: 600; font-size: 36px; letter-spacing: -0.03em">Photography</h2>
+<p style="margin: 0; max-width: 46ch; color: #A1A1AA; font-size: 15px">Mostly landscapes from hikes and road trips around the Pacific Northwest. Click any photo to see it larger.</p>
+</div>
+<button class="ct-photo ct-shot" data-dc-on-click="{{open0}}" aria-label="Open photo 1 of 5: mountain valley with sunlight breaking through clouds" style="display: block; width: 100%; aspect-ratio: 21 / 9; padding: 0; border: 1px solid rgba(255,255,255,0.08); border-radius: 20px; overflow: hidden; background: #121316; cursor: zoom-in">
+<img src="assets/photo-valley.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 55%">
+</button>
+<div class="ct-gallery" style="margin-top: 20px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; align-items: start">
+<div style="display: flex; flex-direction: column; gap: 20px">
+<button class="ct-photo ct-shot" data-dc-on-click="{{open1}}" aria-label="Open photo 2 of 5: mountain stream in an evergreen forest" style="display: block; width: 100%; aspect-ratio: 4 / 5; padding: 0; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; overflow: hidden; background: #121316; cursor: zoom-in">
+<img src="assets/photo-stream.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 60%">
+</button>
+<button class="ct-photo ct-shot" data-dc-on-click="{{open3}}" aria-label="Open photo 4 of 5: foggy coastline with a sea stack behind shingled houses" style="display: block; width: 100%; aspect-ratio: 3 / 2; padding: 0; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; overflow: hidden; background: #121316; cursor: zoom-in">
+<img src="assets/photo-coast.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 62% 50%">
+</button>
+</div>
+<div style="display: flex; flex-direction: column; gap: 20px">
+<button class="ct-photo ct-shot" data-dc-on-click="{{open2}}" aria-label="Open photo 3 of 5: alpine lake below steep peaks" style="display: block; width: 100%; aspect-ratio: 3 / 2; padding: 0; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; overflow: hidden; background: #121316; cursor: zoom-in">
+<img src="assets/photo-lake.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 62%">
+</button>
+<button class="ct-photo ct-shot" data-dc-on-click="{{open4}}" aria-label="Open photo 5 of 5: lodge interior with tall windows framing snowy mountains" style="display: block; width: 100%; aspect-ratio: 4 / 5; padding: 0; border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; overflow: hidden; background: #121316; cursor: zoom-in">
+<img src="assets/photo-lodge.jpg" alt="" style="display: block; width: 100%; height: 100%; object-fit: cover; object-position: 50% 40%">
+</button>
+</div>
+</div>
+<sc-if data-dc-a-value="{{lightbox}}" data-dc-a-hint-placeholder-val="{{ false }}">
+<div role="dialog" aria-label="Photo viewer" style="position: fixed; inset: 0; z-index: 20; background: rgba(8,8,10,0.94); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 18px; padding: 32px">
+<img data-dc-a-src="{{shown.src}}" data-dc-a-alt="{{shown.alt}}" style="display: block; max-width: min(1200px, 100%); max-height: 78vh; object-fit: contain; border-radius: 12px">
+<p style="margin: 0; color: #A1A1AA; font-size: 13px; font-family: 'JetBrains Mono', monospace">{{shown.count}}</p>
+<div style="display: flex; gap: 10px">
+<button class="ct-btn ct-ghost" data-dc-on-click="{{prev}}" style="height: 40px; padding: 0 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.18); background: transparent; color: #EDEDEF; font: inherit; font-size: 14px; cursor: pointer">Previous</button>
+<button class="ct-btn ct-ghost" data-dc-on-click="{{next}}" style="height: 40px; padding: 0 16px; border-radius: 10px; border: 1px solid rgba(255,255,255,0.18); background: transparent; color: #EDEDEF; font: inherit; font-size: 14px; cursor: pointer">Next</button>
+<button class="ct-btn ct-primary" data-dc-on-click="{{closeBox}}" style="height: 40px; padding: 0 16px; border-radius: 10px; border: 0; background: #3FCF96; color: #06140E; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer">Close</button>
+</div>
+</div>
+</sc-if>
+</section>
+
+<section id="contact" style="padding-bottom: 96px">
+<div class="ct-cta" style="position: relative; overflow: hidden; border: 1px solid rgba(63,207,150,0.3); border-radius: 28px; background: #0F1513; padding: 64px 56px; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 0.7fr); gap: 56px; align-items: end">
+<svg aria-hidden="true" width="600" height="600" viewBox="0 0 600 600" style="position: absolute; right: -170px; top: -200px; pointer-events: none"><ellipse cx="300" cy="300" rx="60" ry="43" fill="none" stroke="#3FCF96" stroke-opacity="0.35"></ellipse><ellipse cx="300" cy="300" rx="110" ry="79" fill="none" stroke="#3FCF96" stroke-opacity="0.26"></ellipse><ellipse cx="300" cy="300" rx="165" ry="119" fill="none" stroke="#3FCF96" stroke-opacity="0.2"></ellipse><ellipse cx="300" cy="300" rx="225" ry="162" fill="none" stroke="#3FCF96" stroke-opacity="0.15"></ellipse><ellipse cx="300" cy="300" rx="290" ry="209" fill="none" stroke="#3FCF96" stroke-opacity="0.1"></ellipse><circle cx="300" cy="300" r="6" fill="#3FCF96"></circle></svg>
+<div style="position: relative">
+<p style="margin: 0 0 24px; display: inline-flex; align-items: center; gap: 10px; font-size: 14px; color: #D4D4D8"><span class="ct-breathe" aria-hidden="true" style="width: 8px; height: 8px; border-radius: 9999px; background: #3FCF96"></span>Available for a Summer 2027 internship</p>
+<h2 style="margin: 0; font-weight: 600; font-size: 60px; line-height: 1; letter-spacing: -0.04em; max-width: 14ch">Hiring for Summer 2027? Let’s talk.</h2>
+<p style="margin: 24px 0 0; font-size: 19px; line-height: 1.55; color: #D4D4D8; max-width: 50ch">I bring both halves of machine learning research: the math that proves a method works, and the hands-on engineering to build it, from medical imaging to recommendation.</p>
+<div style="margin-top: 36px; display: flex; flex-wrap: wrap; gap: 12px">
+<a class="ct-btn ct-primary" href="mailto:mahdihasan0072@outlook.com" style="display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 24px; border-radius: 12px; background: #3FCF96; color: #06140E; text-decoration: none; font-weight: 600; font-size: 16px">Email me
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg></a>
+<button class="ct-btn ct-ghost" data-dc-on-click="{{copyEmail}}" aria-live="polite" style="display: inline-flex; align-items: center; gap: 8px; height: 52px; padding: 0 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.18); background: transparent; color: #EDEDEF; font: inherit; font-weight: 500; cursor: pointer">{{copyLabel}}</button>
+<a class="ct-btn ct-ghost" href="Mahdi_Hasan_Bhuiyan_CV.pdf" download="Mahdi_Hasan_Bhuiyan_CV.pdf" target="_blank" rel="noopener" style="display: inline-flex; align-items: center; height: 52px; padding: 0 20px; border-radius: 12px; border: 1px solid rgba(255,255,255,0.18); text-decoration: none; font-weight: 500">Download CV</a>
+</div>
+</div>
+<dl style="position: relative; margin: 0; display: flex; flex-direction: column">
+<div style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.1)"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">Role</dt><dd style="margin: 4px 0 0">PhD Intern: Applied Scientist, Research Scientist, Data Scientist, Machine Learning Research</dd></div>
+<div style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.1)"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">Focus</dt><dd style="margin: 4px 0 0">Federated Learning, Decentralized Optimization, Bilevel Optimization</dd></div>
+<div style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.1)"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">Based in</dt><dd style="margin: 4px 0 0">Pullman, WA</dd></div>
+<div style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.1)"><dt style="font-family: 'JetBrains Mono', monospace; font-size: 11px; color: #71717A">Email</dt><dd style="margin: 4px 0 0; display: flex; flex-direction: column; gap: 4px; overflow-wrap: anywhere"><a href="mailto:mahdihasan0072@outlook.com" style="color: #EDEDEF">mahdihasan0072@outlook.com</a><a href="mailto:mahdihasan.bhuiyan@wsu.edu" style="color: #EDEDEF">mahdihasan.bhuiyan@wsu.edu</a></dd></div>
+<div style="padding: 14px 0; border-top: 1px solid rgba(255,255,255,0.1); display: flex; flex-wrap: wrap; gap: 8px 20px"><a href="https://www.linkedin.com/in/mahdi-hasan-bhuiyan-8470aa251/" target="_blank" rel="noopener" style="color: #3FCF96">LinkedIn ↗</a><a href="https://github.com/Mahdi0082?tab=repositories" target="_blank" rel="noopener" style="color: #3FCF96">GitHub ↗</a><a href="https://scholar.google.com/citations?user=PoWDRyIAAAAJ&amp;hl=en" target="_blank" rel="noopener" style="color: #3FCF96">Google Scholar ↗</a></div>
+</dl>
+</div>
+</section>
+
+<footer style="padding: 28px 0 56px; border-top: 1px solid rgba(255,255,255,0.06); display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font-size: 13px; color: #71717A">
+<span>© 2026 Mahdi Hasan Bhuiyan</span>
+<a href="#top" style="color: #A1A1AA; text-decoration: none">Back to top ↑</a>
+</footer>
+
+</main>
+</div>
+</div>
+<script>
+/* Small runtime for this page: fills the {{...}} placeholders from Component.renderVals(),
+   repeats <sc-for> blocks, shows <sc-if> blocks, and wires data-dc-on-* events. */
+(function () {
+  'use strict';
+
+  function DCLogic(props) { this.props = props || {}; this.state = {}; }
+  DCLogic.prototype.setState = function (update) {
+    if (typeof update === 'function') update = update(this.state);
+    Object.assign(this.state, update || {});
+    schedule();
+  };
+  window.DCLogic = DCLogic;
+
+  var HOLE = /\{\{\s*([^}]+?)\s*\}\}/g;
+  var ONLY = /^\s*\{\{\s*([^}]+?)\s*\}\}\s*$/;
+  var BOOL = { disabled: 1, checked: 1, hidden: 1 };
+  var comp = null, rootBlock = null, current = { vals: {} }, queued = false;
+
+  function lookup(expr, scope) {
+    expr = expr.trim();
+    if (expr === 'true') return true;
+    if (expr === 'false') return false;
+    var parts = expr.split('.');
+    for (var i = 0; i < scope.length; i++) {
+      var s = scope[i];
+      if (s && Object.prototype.hasOwnProperty.call(s, parts[0])) {
+        var v = s;
+        for (var j = 0; j < parts.length; j++) { if (v == null) return undefined; v = v[parts[j]]; }
+        return v;
+      }
+    }
+    return undefined;
+  }
+
+  function interp(str, scope) {
+    var m = str.match(ONLY);
+    if (m) return lookup(m[1], scope);
+    return str.replace(HOLE, function (_, p) { var v = lookup(p, scope); return v == null ? '' : String(v); });
+  }
+
+  function setAttr(el, name, v) {
+    if (name === 'value' && 'value' in el && el.tagName === 'INPUT') {
+      var s = v == null ? '' : String(v);
+      if (el.value !== s) el.value = s;
+      return;
+    }
+    if (BOOL[name]) {
+      if (v === false || v == null || v === 'false') el.removeAttribute(name); else el.setAttribute(name, '');
+      return;
+    }
+    if (v == null || (v === false && name.indexOf('aria-') !== 0)) { el.removeAttribute(name); return; }
+    var str = String(v);
+    if (el.getAttribute(name) !== str) el.setAttribute(name, str);
+  }
+
+  // Compile a node tree; returns an array of updater functions.
+  function compile(node, getScope, ups) {
+    if (node.nodeType === 3) {
+      if (node.nodeValue.indexOf('{{') !== -1) {
+        var raw = node.nodeValue;
+        ups.push(function () { var v = interp(raw, getScope()); var s = v == null ? '' : String(v); if (node.nodeValue !== s) node.nodeValue = s; });
+      }
+      return;
+    }
+    if (node.nodeType !== 1) return;
+    var tag = node.localName.toLowerCase();
+    if (tag === 'sc-for') { loop(node, getScope, ups); return; }
+    if (tag === 'sc-if') { cond(node, getScope, ups); return; }
+
+    var attrs = Array.prototype.slice.call(node.attributes);
+    attrs.forEach(function (a) {
+      var name = a.name, expr = a.value;
+      if (name.indexOf('data-dc-a-') === 0) {
+        var real = name.slice(10);
+        node.removeAttribute(name);
+        ups.push(function () { setAttr(node, real, interp(expr, getScope())); });
+      } else if (name.indexOf('data-dc-on-') === 0) {
+        var ev = name.slice(11);
+        node.removeAttribute(name);
+        var m = expr.match(ONLY), path = m ? m[1] : expr;
+        node.addEventListener(ev, function (e) { var f = lookup(path, getScope()); if (typeof f === 'function') f(e); });
+      }
+    });
+    Array.prototype.slice.call(node.childNodes).forEach(function (c) { compile(c, getScope, ups); });
+  }
+
+  function attrExpr(node, name) {
+    var v = node.getAttribute('data-dc-a-' + name);
+    if (v == null) v = node.getAttribute(name);
+    var m = v && v.match(ONLY);
+    return m ? m[1] : v;
+  }
+
+  function instantiate(tplNode, getScope) {
+    var nodes = [], ups = [];
+    Array.prototype.forEach.call(tplNode.childNodes, function (c) {
+      var n = c.cloneNode(true);
+      nodes.push(n);
+    });
+    nodes.forEach(function (n) { compile(n, getScope, ups); });
+    return { nodes: nodes, update: function () { ups.forEach(function (u) { u(); }); } };
+  }
+
+  function loop(node, getScope, ups) {
+    var listExpr = attrExpr(node, 'list'), as = node.getAttribute('as') || 'item';
+    var marker = document.createComment('sc-for');
+    node.parentNode.insertBefore(marker, node.nextSibling);
+    var insts = [];
+    ups.push(function () {
+      var list = lookup(listExpr, getScope()) || [];
+      while (insts.length > list.length) { insts.pop().nodes.forEach(function (n) { if (n.parentNode) n.parentNode.removeChild(n); }); }
+      list.forEach(function (item, i) {
+        var inst = insts[i];
+        if (!inst) {
+          var holder = { item: item };
+          inst = instantiate(node, function () { var o = {}; o[as] = holder.item; return [o].concat(getScope()); });
+          inst.holder = holder;
+          insts.push(inst);
+          inst.nodes.forEach(function (n) { marker.parentNode.insertBefore(n, marker); });
+        }
+        inst.holder.item = item;
+        inst.update();
+      });
+    });
+  }
+
+  function cond(node, getScope, ups) {
+    var expr = attrExpr(node, 'value');
+    var marker = document.createComment('sc-if');
+    node.parentNode.insertBefore(marker, node.nextSibling);
+    var inst = null;
+    ups.push(function () {
+      var on = !!lookup(expr, getScope());
+      if (on && !inst) {
+        inst = instantiate(node, getScope);
+        inst.nodes.forEach(function (n) { marker.parentNode.insertBefore(n, marker); });
+      } else if (!on && inst) {
+        inst.nodes.forEach(function (n) { if (n.parentNode) n.parentNode.removeChild(n); });
+        inst = null;
+      }
+      if (inst) inst.update();
+    });
+  }
+
+  function render() {
+    queued = false;
+    current.vals = comp.renderVals();
+    rootBlock.forEach(function (u) { u(); });
+  }
+  function schedule() {
+    if (!rootBlock || queued) return;
+    queued = true;
+    (window.queueMicrotask || function (f) { Promise.resolve().then(f); })(render);
+  }
+
+  window.dcMount = function (Component, root) {
+    comp = new Component({});
+    var ups = [];
+    compile(root, function () { return [current.vals]; }, ups);
+    rootBlock = ups;
+    render();
+    if (comp.componentDidMount) comp.componentDidMount();
+    return comp;
+  };
+})();
+
+</script>
+<script>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.A = [1.2, -0.8, 0.6, 1.5, -0.5];
+    this.B = [0.1, 0.35, -0.2, 0.05, 0.45];
+    this.T = [0.95, 0.75, 0.6, 1.1, 0.15];
+    this.LAM = 0.15;
+    this.EMAIL = 'mahdihasan0072@outlook.com';
+    this.CX = [72, 196, 320, 444, 568];
+    this.PHOTOS = [
+      { src: 'assets/photo-valley.jpg', alt: 'Mountain valley under heavy clouds, with sunlight breaking through' },
+      { src: 'assets/photo-stream.jpg', alt: 'Rocky mountain stream running through a dense evergreen forest' },
+      { src: 'assets/photo-lake.jpg', alt: 'Alpine lake below steep peaks, with the sun behind clouds' },
+      { src: 'assets/photo-coast.jpg', alt: 'Foggy coastline with a large sea stack behind shingled houses and yellow wildflowers' },
+      { src: 'assets/photo-lodge.jpg', alt: 'Dark lodge interior with tall windows framing snowy mountains' }
+    ];
+    var num = 0, den = 0;
+    for (var i = 0; i < 5; i++) { num += this.A[i] * (this.T[i] - this.B[i]); den += this.A[i] * this.A[i]; }
+    this.XSTAR = (num / 5) / (den / 5 + this.LAM);
+    this.PSTAR = this.phi(this.XSTAR);
+    var s = this.fresh(3, 3, [true, true, true, true, true]);
+    s.photo = null;
+    s.copied = '';
+    this.state = s;
+    this._timer = null;
+  }
+  componentWillUnmount() { if (this._timer) clearTimeout(this._timer); if (this._copyT) clearTimeout(this._copyT); }
+  target(i, x) { return this.A[i] * x + this.B[i]; }
+  phi(x) { var s = 0; for (var i = 0; i < 5; i++) { var d = this.target(i, x) - this.T[i]; s += d * d; } return s / 5 + this.LAM * x * x; }
+  fresh(m, E, online) {
+    var x = -1.2;
+    return { m: m, E: E, online: online, x: x, round: 0, seed: 7, busy: false, last: [], y: [0, 0, 0, 0, 0], hist: [this.phi(x)] };
+  }
+  oneRound(st) {
+    var ids = [], i;
+    for (i = 0; i < 5; i++) { if (st.online[i]) ids.push(i); }
+    var m = Math.min(st.m, ids.length), seed = st.seed, S = [];
+    for (var k = 0; k < m; k++) { seed = (seed * 16807) % 2147483647; S.push(ids.splice(seed % ids.length, 1)[0]); }
+    var y = st.y.slice(), x = st.x, sum = 0;
+    for (var s = 0; s < S.length; s++) {
+      i = S[s];
+      for (var e = 0; e < st.E; e++) { y[i] = y[i] - 0.5 * (y[i] - this.target(i, x)); }
+      sum += 2 * this.LAM * x + 2 * (y[i] - this.T[i]) * this.A[i];
+    }
+    var nx = S.length ? Math.max(-1.5, Math.min(1.5, x - 0.2 * sum / S.length)) : x;
+    return { x: nx, y: y, seed: seed, last: S, round: st.round + 1, hist: st.hist.concat([this.phi(nx)]).slice(-41) };
+  }
+  renderVals() {
+    var self = this, st = this.state, x = st.x;
+    var Yg = function (v) { var vv = Math.max(-1.5, Math.min(1.6, v)); return 372 - (vv + 1.5) / 3.1 * 164; };
+    var clients = this.CX.map(function (cx, i) {
+      var part = st.last.indexOf(i) !== -1, on = st.online[i];
+      return {
+        cx: cx, left: cx - 52,
+        name: 'Client ' + (i + 1),
+        tY: Yg(self.target(i, x)).toFixed(1), dY: Yg(st.y[i]).toFixed(1),
+        dot: part ? '#3FCF96' : (on ? '#D4D4D8' : '#3F3F46'),
+        stroke: part ? 'rgba(63,207,150,0.6)' : 'rgba(255,255,255,0.08)',
+        fade: on ? 1 : 0.35,
+        linkColor: part ? '#3FCF96' : 'rgba(255,255,255,0.09)', linkWidth: part ? 2 : 1,
+        dash: part ? '4 6' : 'none', flow: part ? 'ct-flow' : '',
+        status: part ? 'solving' : (on ? 'waiting' : 'offline'), statusColor: part ? '#3FCF96' : '#71717A',
+        yText: st.y[i].toFixed(2)
+      };
+    });
+    var gaps = st.hist.map(function (h) { return Math.max(0, h - self.PSTAR); });
+    var top = Math.max(0.02, Math.max.apply(null, gaps));
+    var chart = gaps.map(function (gp, k) { return (40 + k * 14.5).toFixed(1) + ',' + (92 - gp / top * 64).toFixed(1); }).join(' ');
+    var phi = this.phi(x), gap = Math.max(0, phi - this.PSTAR);
+    var chips = [0, 1, 2, 3, 4].map(function (i) {
+      var on = st.online[i];
+      return { label: 'Client ' + (i + 1), on: on, bg: on ? 'rgba(63,207,150,0.12)' : 'transparent', fg: on ? '#EDEDEF' : '#71717A', border: on ? 'rgba(63,207,150,0.45)' : 'rgba(255,255,255,0.12)',
+        toggle: function () { var o = self.state.online.slice(); o[i] = !o[i]; if (o.indexOf(true) === -1) return; self.setState({ online: o }); } };
+    });
+    var runN = function (count) {
+      var tick = function (left) {
+        var upd = self.oneRound(self.state);
+        upd.busy = left > 1;
+        self.setState(upd);
+        if (left > 1) { self._timer = setTimeout(function () { tick(left - 1); }, 180); }
+      };
+      tick(count);
+    };
+    var onlineCount = st.online.filter(function (o) { return o; }).length;
+    var openAt = function (j) { return function () { self.setState({ photo: j }); }; };
+    var n = this.PHOTOS.length, idx = st.photo === null ? 0 : st.photo, shown = Object.assign({}, this.PHOTOS[idx], { count: (idx + 1) + ' of ' + n });
+    var hint = st.busy
+      ? 'Each round: the server sends x to the sampled clients (green). Each one takes a few steps on its own inner problem, using only its own data, then sends back one gradient for x. The server averages them and updates x.'
+      : 'Try 1 client per round, then 5. With few clients, each update depends on whose data was picked, so x wobbles around the optimum. With fewer inner steps, the clients’ inner solutions lag behind and their gradients are less accurate.';
+    return {
+      clients: clients, chart: chart,
+      serverX: (250 + (x + 1.5) / 3 * 140).toFixed(1), starX: (250 + (this.XSTAR + 1.5) / 3 * 140).toFixed(1),
+      xText: (x >= 0 ? ' ' : '') + x.toFixed(3), phiText: phi.toFixed(4), gapText: gap.toFixed(4), round: st.round,
+      m: st.m, mLabel: Math.min(st.m, onlineCount) + ' of ' + onlineCount + ' online', E: st.E,
+      chips: chips, busy: st.busy, manyLabel: st.busy ? 'Running…' : 'Run 30 rounds', hint: hint,
+      demoLabel: 'Federated bilevel optimization demo. Round ' + st.round + '. Shared x is ' + x.toFixed(2) + '; ' + st.last.length + ' clients sampled; gap to optimum ' + gap.toFixed(3) + '.',
+      chartLabel: 'Line chart of the gap to the optimum over the last ' + st.hist.length + ' rounds; current gap ' + gap.toFixed(3) + '.',
+      onM: function (e) { self.setState({ m: Number(e.target.value) }); },
+      onE: function (e) { self.setState({ E: Number(e.target.value) }); },
+      runOne: function () { if (!self.state.busy) runN(1); },
+      runMany: function () { if (!self.state.busy) { self.setState({ busy: true }); runN(30); } },
+      reset: function () { if (self._timer) clearTimeout(self._timer); self.setState(self.fresh(self.state.m, self.state.E, self.state.online)); },
+      open0: openAt(0), open1: openAt(1), open2: openAt(2), open3: openAt(3), open4: openAt(4),
+      lightbox: st.photo !== null, shown: shown,
+      prev: function () { self.setState({ photo: (self.state.photo + n - 1) % n }); },
+      next: function () { self.setState({ photo: (self.state.photo + 1) % n }); },
+      closeBox: function () { self.setState({ photo: null }); },
+      copyLabel: st.copied === 'ok' ? 'Copied' : (st.copied === 'fail' ? 'Copy failed' : 'Copy email'),
+      copyEmail: function () {
+        var done = function (v) { self.setState({ copied: v }); clearTimeout(self._copyT); self._copyT = setTimeout(function () { self.setState({ copied: '' }); }, 1600); };
+        try { navigator.clipboard.writeText(self.EMAIL).then(function () { done('ok'); }, function () { done('fail'); }); } catch (e) { done('fail'); }
+      }
+    };
+  }
+}
+</script>
+<script>
+(function () {
+  var c = window.dcMount(Component, document.getElementById('dc-root'));
+  document.addEventListener('keydown', function (e) {
+    if (c.state.photo === null || c.state.photo === undefined) return;
+    var n = c.PHOTOS.length;
+    if (e.key === 'Escape') c.setState({ photo: null });
+    else if (e.key === 'ArrowRight') c.setState({ photo: (c.state.photo + 1) % n });
+    else if (e.key === 'ArrowLeft') c.setState({ photo: (c.state.photo + n - 1) % n });
+  });
+})();
+</script>
+</body>
+</html>
